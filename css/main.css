@@ -1,0 +1,156 @@
+* {
+  font-family: "Red Hat Display", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: #dfe6fb;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -41em;
+  background-position-x: -3em;
+  background-image: url(../images/pattern-background-mobile.svg);
+}
+
+img {
+  max-width: 100%;
+}
+
+article {
+  width: 32.7em;
+  border-radius: 2em;
+}
+
+.hero {
+  border-radius: 2em 2em 0 0;
+}
+
+.main {
+  margin-top: -3px;
+  background-color: white;
+  border-radius: 0 0 2em 2em;
+  text-align: center;
+  padding: 3.2em 0;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 900;
+}
+
+.content {
+  margin: 1.6em 0 2.4em;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #717fa6;
+  padding: 0 2em;
+  line-height: 2.5rem;
+}
+
+section {
+  background-color: #f7f9ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.7em;
+  border-radius: 1.1em;
+  margin: 0 2.4em;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #1f2e55;
+}
+
+.annualPlan {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #717fa6;
+}
+
+span {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #382ae1;
+  text-decoration: underline;
+}
+
+.cta {
+  width: 20em;
+  height: 3.5em;
+  color: white;
+  font-weight: 1.5rem;
+  font-weight: 900;
+  border-radius: 1.1em;
+  border: none;
+  background-color: #382ae1;
+  margin: 2.4em 0;
+  box-shadow: #382ae1 0px 25px 50px -18px;
+}
+
+h2 {
+  font-size: 1.5rem !important;
+  font-weight: 900;
+  color: #717fa6;
+}
+
+span:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: #766cf1;
+}
+
+.cta:hover {
+  cursor: pointer;
+  background-color: #766cf1;
+}
+
+h2:hover {
+  cursor: pointer;
+  color: #1f2e55;
+}
+
+@media only screen and (min-width: 900px) {
+  body {
+    background-position-x: -105em;
+    background-position-y: -30em;
+    background-image: url(../images/pattern-background-desktop.svg);
+  }
+  article {
+    width: 49.5em;
+  }
+  .hero {
+    width: 49.6em;
+  }
+
+  .content {
+    padding: 0 7em;
+  }
+
+  section {
+    margin-left: 8em;
+    margin-right: 8em;
+  }
+
+  .cta {
+    width: 25em;
+  }
+}
